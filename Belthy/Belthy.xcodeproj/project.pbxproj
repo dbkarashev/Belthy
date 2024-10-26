@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		000629F92CCD2C0200F57BD0 /* Belthy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 000629F32CCD2C0200F57BD0 /* Belthy.xcdatamodeld */; };
+		000629FA2CCD2C0200F57BD0 /* BelthyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000629F42CCD2C0200F57BD0 /* BelthyApp.swift */; };
+		000629FB2CCD2C0200F57BD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000629F52CCD2C0200F57BD0 /* ContentView.swift */; };
+		000629FC2CCD2C0200F57BD0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000629F62CCD2C0200F57BD0 /* Persistence.swift */; };
+		000629FD2CCD2C0200F57BD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000629F02CCD2C0200F57BD0 /* Preview Assets.xcassets */; };
+		000629FE2CCD2C0200F57BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000629F22CCD2C0200F57BD0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		000629BC2CCD22AF00F57BD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +36,15 @@
 		000629A62CCD22AD00F57BD0 /* Belthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Belthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000629BB2CCD22AF00F57BD0 /* BelthyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelthyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000629C52CCD22AF00F57BD0 /* BelthyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelthyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000629F02CCD2C0200F57BD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		000629F22CCD2C0200F57BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000629F42CCD2C0200F57BD0 /* BelthyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelthyApp.swift; sourceTree = "<group>"; };
+		000629F52CCD2C0200F57BD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000629F62CCD2C0200F57BD0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		000629F82CCD2C0200F57BD0 /* Belthy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Belthy.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		000629A82CCD22AD00F57BD0 /* Belthy */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Belthy;
-			sourceTree = "<group>";
-		};
 		000629BE2CCD22AF00F57BD0 /* BelthyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BelthyTests;
@@ -75,7 +85,7 @@
 		0006299D2CCD22AD00F57BD0 = {
 			isa = PBXGroup;
 			children = (
-				000629A82CCD22AD00F57BD0 /* Belthy */,
+				000629F72CCD2C0200F57BD0 /* Belthy */,
 				000629BE2CCD22AF00F57BD0 /* BelthyTests */,
 				000629C82CCD22AF00F57BD0 /* BelthyUITests */,
 				000629A72CCD22AD00F57BD0 /* Products */,
@@ -92,6 +102,83 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		000629F12CCD2C0200F57BD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				000629F02CCD2C0200F57BD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		000629F72CCD2C0200F57BD0 /* Belthy */ = {
+			isa = PBXGroup;
+			children = (
+				00062A052CCD2C5500F57BD0 /* Resources */,
+				00062A042CCD2C4C00F57BD0 /* Utils */,
+				00062A032CCD2C4000F57BD0 /* Services */,
+				00062A022CCD2C2C00F57BD0 /* ViewModels */,
+				00062A012CCD2C2000F57BD0 /* Views */,
+				00062A002CCD2C1300F57BD0 /* Models */,
+				000629FF2CCD2C0900F57BD0 /* App */,
+				000629F12CCD2C0200F57BD0 /* Preview Content */,
+			);
+			path = Belthy;
+			sourceTree = "<group>";
+		};
+		000629FF2CCD2C0900F57BD0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000629F42CCD2C0200F57BD0 /* BelthyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		00062A002CCD2C1300F57BD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000629F32CCD2C0200F57BD0 /* Belthy.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00062A012CCD2C2000F57BD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000629F52CCD2C0200F57BD0 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00062A022CCD2C2C00F57BD0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00062A032CCD2C4000F57BD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				000629F62CCD2C0200F57BD0 /* Persistence.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00062A042CCD2C4C00F57BD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		00062A052CCD2C5500F57BD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000629F22CCD2C0200F57BD0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +193,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				000629A82CCD22AD00F57BD0 /* Belthy */,
 			);
 			name = Belthy;
 			packageProductDependencies = (
@@ -212,6 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000629FD2CCD2C0200F57BD0 /* Preview Assets.xcassets in Resources */,
+				000629FE2CCD2C0200F57BD0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000629F92CCD2C0200F57BD0 /* Belthy.xcdatamodeld in Sources */,
+				000629FA2CCD2C0200F57BD0 /* BelthyApp.swift in Sources */,
+				000629FB2CCD2C0200F57BD0 /* ContentView.swift in Sources */,
+				000629FC2CCD2C0200F57BD0 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +648,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		000629F32CCD2C0200F57BD0 /* Belthy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				000629F82CCD2C0200F57BD0 /* Belthy.xcdatamodel */,
+			);
+			currentVersion = 000629F82CCD2C0200F57BD0 /* Belthy.xcdatamodel */;
+			path = Belthy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0006299E2CCD22AD00F57BD0 /* Project object */;
 }
